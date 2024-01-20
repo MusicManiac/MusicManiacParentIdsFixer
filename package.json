@@ -1,6 +1,6 @@
 {
-    "name": "MusicManiac-WeaponCategoriesFixer",
-    "version": "1.0.1",
+    "name": "MusicManiac-ParentIdsFixer",
+    "version": "1.0.2",
     "main": "src/mod.js",
     "license": "MIT",
     "author": "MusicManiac",
