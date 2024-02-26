@@ -14,7 +14,8 @@ class ParentIdsFixer implements IPostDBLoadMod
 		// Get tables from database
 		const tables = db.getTables();    
 		// Get item database from tables
-		let itemDB = tables.templates.items;
+		const itemDB = tables.templates.items;
+		const questsDB = tables.templates.quests;
 
 		const assaultCarbineParentId = "5447b5fc4bdc2d87278b4567";
 		const assaultRifleParentId = "5447b5f14bdc2d61278b4567";
@@ -30,8 +31,9 @@ class ParentIdsFixer implements IPostDBLoadMod
 
 		itemDB["57c44b372459772d2b39b8ce"]._parent = assaultRifleParentId; // AS VAL 9x39 special assault rifle
 
-		itemDB["5c079ed60db834001a66b372"]._parent = lightTargetPointersParentID; // TT DLP Tactical Precision LAM-module
-		itemDB["5cc9c20cd7f00c001336c65d"]._parent = lightTargetPointersParentID; // NcSTAR Tactical blue laser LAM-module
+		//itemDB["5c079ed60db834001a66b372"]._parent = lightTargetPointersParentID; // TT DLP Tactical Precision LAM-module
+		//itemDB["5cc9c20cd7f00c001336c65d"]._parent = lightTargetPointersParentID; // NcSTAR Tactical blue laser LAM-module
+
 		logger.info("[ParentIdsFixer] MusicManiac - Parent Ids Fixer Loaded");
 	}
 }
